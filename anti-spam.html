@@ -114,11 +114,35 @@
             line-height: 1.8;
         }
         
+        .bilingual-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .bilingual-section:last-child {
+            border-bottom: none;
+        }
+        
+        .english, .japanese {
+            padding: 10px;
+        }
+        
+        .japanese {
+            border-left: 1px solid #eee;
+            padding-left: 30px;
+            font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+        }
+        
         .policy-content h2 {
             color: #2c3e50;
             margin: 2rem 0 1rem;
             padding-bottom: 0.5rem;
             border-bottom: 1px solid #ecf0f1;
+            grid-column: span 2;
         }
         
         .policy-content h3 {
@@ -147,6 +171,7 @@
             margin-top: 2rem;
             padding-top: 1rem;
             border-top: 1px solid #ecf0f1;
+            grid-column: span 2;
         }
         
         .back-to-home {
@@ -155,6 +180,7 @@
             color: #3498db;
             text-decoration: none;
             font-weight: 600;
+            grid-column: span 2;
         }
         
         .back-to-home i {
@@ -239,6 +265,18 @@
             .policy-header h1 {
                 font-size: 2rem;
             }
+            
+            .bilingual-section {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .japanese {
+                border-left: none;
+                border-top: 1px solid #eee;
+                padding-left: 10px;
+                padding-top: 20px;
+            }
         }
     </style>
 </head>
@@ -268,86 +306,200 @@
         </div>
         <div class="policy-content">
             <h2>1. Zero Tolerance for Spam</h2>
-            <p>CountryMax Email Delivery maintains a strict zero-tolerance policy against spam. We comply fully with the CAN-SPAM Act of 2003, Canada's Anti-Spam Legislation (CASL), the General Data Protection Regulation (GDPR), and other applicable anti-spam regulations.</p>
+            <div class="bilingual-section">
+                <div class="english">
+                    <p>CountryMax Email Delivery maintains a strict zero-tolerance policy against spam. We comply fully with the CAN-SPAM Act of 2003, Canada's Anti-Spam Legislation (CASL), the General Data Protection Regulation (GDPR), Japan's Act on Regulation of Transmission of Specified Electronic Mail, and other applicable anti-spam regulations.</p>
+                </div>
+                <div class="japanese">
+                    <p>CountryMax Email Deliveryはスパムに対して厳格なゼロトレランスポリシーを維持しています。当社は2003年CAN-SPAM法、カナダの反スパム法（CASL）、EU一般データ保護規則（GDPR）、日本の特定電子メールの送信の適正化等に関する法律、その他の適用可能な反スパム規制を完全に遵守しています。</p>
+                </div>
+            </div>
             
             <h2>2. Definition of Spam</h2>
-            <p>For purposes of this policy, spam is defined as unsolicited commercial email sent in bulk. Key indicators of spam include:</p>
-            <ul>
-                <li>Recipients who have not provided explicit, verifiable consent to receive messages</li>
-                <li>Deceptive subject lines, header information, or sender addresses</li>
-                <li>Absence of a valid physical postal address</li>
-                <li>Lack of a clear, functional unsubscribe mechanism</li>
-                <li>Failure to honor opt-out requests within 10 business days</li>
-            </ul>
+            <div class="bilingual-section">
+                <div class="english">
+                    <p>For purposes of this policy, spam is defined as unsolicited commercial email sent in bulk. Key indicators of spam include:</p>
+                    <ul>
+                        <li>Recipients who have not provided explicit, verifiable consent to receive messages</li>
+                        <li>Deceptive subject lines, header information, or sender addresses</li>
+                        <li>Absence of a valid physical postal address</li>
+                        <li>Lack of a clear, functional unsubscribe mechanism</li>
+                        <li>Failure to honor opt-out requests within 10 business days</li>
+                    </ul>
+                </div>
+                <div class="japanese">
+                    <p>本ポリシーの目的上、スパムとは一括送信される未承諾の商業用電子メールと定義されます。スパムの主な指標には以下が含まれます：</p>
+                    <ul>
+                        <li>メッセージ受信について明示的かつ検証可能な同意を提供していない受信者</li>
+                        <li>欺瞞的な件名、ヘッダー情報、または送信者アドレス</li>
+                        <li>有効な物理的な郵送先住所の欠如</li>
+                        <li>明確で機能的な配信停止メカニズムの欠如</li>
+                        <li>10営業日以内に配信停止要求を処理しないこと</li>
+                    </ul>
+                </div>
+            </div>
             
             <h2>3. Requirements for All Emails</h2>
-            <p>All emails sent through our Service must comply with the following requirements:</p>
-            
-            <h3>Consent Requirements</h3>
-            <ul>
-                <li><strong>Explicit Opt-In:</strong> All recipients must have provided explicit, documented consent to receive emails from you.</li>
-                <li><strong>Double Opt-In:</strong> We strongly recommend using double opt-in (confirmation email) for all mailing lists.</li>
-                <li><strong>Clear Identification:</strong> All emails must clearly identify the sender and organization.</li>
-            </ul>
-            
-            <h3>Content Requirements</h3>
-            <ul>
-                <li><strong>Unsubscribe Mechanism:</strong> Every email must contain a visible, functional unsubscribe mechanism that processes requests within 10 business days.</li>
-                <li><strong>Physical Address:</strong> All commercial emails must include a valid physical postal address.</li>
-                <li><strong>Truthful Content:</strong> Subject lines must accurately reflect email content, and sender information must not be deceptive.</li>
-                <li><strong>Clear Labeling:</strong> Commercial content must be clearly identified as such.</li>
-            </ul>
+            <div class="bilingual-section">
+                <div class="english">
+                    <p>All emails sent through our Service must comply with the following requirements:</p>
+                    
+                    <h3>Consent Requirements</h3>
+                    <ul>
+                        <li><strong>Explicit Opt-In:</strong> All recipients must have provided explicit, documented consent to receive emails from you.</li>
+                        <li><strong>Double Opt-In:</strong> We strongly recommend using double opt-in (confirmation email) for all mailing lists.</li>
+                        <li><strong>Clear Identification:</strong> All emails must clearly identify the sender and organization.</li>
+                    </ul>
+                    
+                    <h3>Content Requirements</h3>
+                    <ul>
+                        <li><strong>Unsubscribe Mechanism:</strong> Every email must contain a visible, functional unsubscribe mechanism that processes requests within 10 business days.</li>
+                        <li><strong>Physical Address:</strong> All commercial emails must include a valid physical postal address.</li>
+                        <li><strong>Truthful Content:</strong> Subject lines must accurately reflect email content, and sender information must not be deceptive.</li>
+                        <li><strong>Clear Labeling:</strong> Commercial content must be clearly identified as such.</li>
+                    </ul>
+                </div>
+                <div class="japanese">
+                    <p>当社のサービスを通じて送信されるすべての電子メールは、以下の要件を遵守する必要があります：</p>
+                    
+                    <h3>同意要件</h3>
+                    <ul>
+                        <li><strong>明示的なオプトイン:</strong> すべての受信者は、あなたからの電子メールを受信するための明示的かつ文書化された同意を提供している必要があります。</li>
+                        <li><strong>ダブルオプトイン:</strong> すべてのメーリングリストでダブルオプトイン（確認メール）の使用を強く推奨します。</li>
+                        <li><strong>明確な識別情報:</strong> すべての電子メールは送信者と組織を明確に識別する必要があります。</li>
+                    </ul>
+                    
+                    <h3>コンテンツ要件</h3>
+                    <ul>
+                        <li><strong>配信停止メカニズム:</strong> すべての電子メールには、10営業日以内にリクエストを処理する、表示され機能する配信停止メカニズムが含まれている必要があります。</li>
+                        <li><strong>物理的住所:</strong> すべての商業用電子メールには有効な物理的な郵送先住所を含める必要があります。</li>
+                        <li><strong>真実の内容:</strong> 件名は電子メールの内容を正確に反映し、送信者情報は欺瞞的であってはなりません。</li>
+                        <li><strong>明確なラベリング:</strong> 商業コンテンツはその旨を明確に識別する必要があります。</li>
+                    </ul>
+                </div>
+            </div>
             
             <h2>4. Prohibited Content</h2>
-            <p>You may not use our Service to send emails containing or promoting:</p>
-            <ul>
-                <li>Adult content or pornography</li>
-                <li>Illegal goods, services, or activities</li>
-                <li>Malicious software, phishing attempts, or fraudulent schemes</li>
-                <li>Pyramid schemes or multi-level marketing with deceptive practices</li>
-                <li>Content that infringes on intellectual property rights</li>
-                <li>Hate speech, harassment, or discriminatory content</li>
-            </ul>
+            <div class="bilingual-section">
+                <div class="english">
+                    <p>You may not use our Service to send emails containing or promoting:</p>
+                    <ul>
+                        <li>Adult content or pornography</li>
+                        <li>Illegal goods, services, or activities</li>
+                        <li>Malicious software, phishing attempts, or fraudulent schemes</li>
+                        <li>Pyramid schemes or multi-level marketing with deceptive practices</li>
+                        <li>Content that infringes on intellectual property rights</li>
+                        <li>Hate speech, harassment, or discriminatory content</li>
+                    </ul>
+                </div>
+                <div class="japanese">
+                    <p>以下の内容を含むまたは宣伝する電子メールの送信に当社のサービスを使用することは禁止されています：</p>
+                    <ul>
+                        <li>成人向けコンテンツまたはポルノグラフィー</li>
+                        <li>違法な商品、サービス、または活動</li>
+                        <li>悪意のあるソフトウェア、フィッシング行為、または詐欺的な計画</li>
+                        <li>ネズミ講または欺瞞的な慣行を伴うマルチレベルマーケティング</li>
+                        <li>知的財産権を侵害するコンテンツ</li>
+                        <li>ヘイトスピーチ、嫌がらせ、または差別的なコンテンツ</li>
+                    </ul>
+                </div>
+            </div>
             
             <h2>5. Monitoring and Enforcement</h2>
-            <p>We employ multiple systems to monitor compliance with this Anti-Spam Policy:</p>
-            <ul>
-                <li><strong>Automated Content Scanning:</strong> All outgoing emails are scanned for spam characteristics.</li>
-                <li><strong>Complaint Rate Monitoring:</strong> Accounts must maintain a complaint rate below 0.1% (1 complaint per 1,000 emails sent).</li>
-                <li><strong>Bounce Rate Monitoring:</strong> Accounts must maintain a bounce rate below 5%.</li>
-                <li><strong>Manual Account Reviews:</strong> We conduct regular reviews of high-volume senders.</li>
-                <li><strong>List Verification:</strong> We may require proof of consent for recipient lists.</li>
-            </ul>
+            <div class="bilingual-section">
+                <div class="english">
+                    <p>We employ multiple systems to monitor compliance with this Anti-Spam Policy:</p>
+                    <ul>
+                        <li><strong>Automated Content Scanning:</strong> All outgoing emails are scanned for spam characteristics.</li>
+                        <li><strong>Complaint Rate Monitoring:</strong> Accounts must maintain a complaint rate below 0.1% (1 complaint per 1,000 emails sent).</li>
+                        <li><strong>Bounce Rate Monitoring:</strong> Accounts must maintain a bounce rate below 5%.</li>
+                        <li><strong>Manual Account Reviews:</strong> We conduct regular reviews of high-volume senders.</li>
+                        <li><strong>List Verification:</strong> We may require proof of consent for recipient lists.</li>
+                    </ul>
+                </div>
+                <div class="japanese">
+                    <p>本反スパムポリシーの遵守状況を監視するために、複数のシステムを採用しています：</p>
+                    <ul>
+                        <li><strong>自動コンテンツスキャン:</strong> 送信されるすべての電子メールはスパム特性についてスキャンされます。</li>
+                        <li><strong>苦情率モニタリング:</strong> アカウントは苦情率を0.1%未満（送信1000通あたり1件の苦情）に維持する必要があります。</li>
+                        <li><strong>バウンス率モニタリング:</strong> アカウントはバウンス率を5%未満に維持する必要があります。</li>
+                        <li><strong>手動アカウントレビュー:</strong> 高ボリューム送信者を定期的にレビューします。</li>
+                        <li><strong>リスト検証:</strong> 受信者リストの同意証明を要求する場合があります。</li>
+                    </ul>
+                </div>
+            </div>
             
             <h2>6. Complaint Handling Process</h2>
-            <p>We take all spam complaints seriously:</p>
-            <ul>
-                <li><strong>Reporting:</strong> Suspected spam can be reported to abuse@countrymaxemail.com</li>
-                <li><strong>Investigation:</strong> All reports are investigated within 48 business hours</li>
-                <li><strong>Action:</strong> Accounts found in violation will be immediately suspended</li>
-                <li><strong>Blacklisting:</strong> We maintain relationships with ISPs and blacklist services to report confirmed spammers</li>
-            </ul>
+            <div class="bilingual-section">
+                <div class="english">
+                    <p>We take all spam complaints seriously:</p>
+                    <ul>
+                        <li><strong>Reporting:</strong> Suspected spam can be reported to abuse@countrymaxemail.com</li>
+                        <li><strong>Investigation:</strong> All reports are investigated within 48 business hours</li>
+                        <li><strong>Action:</strong> Accounts found in violation will be immediately suspended</li>
+                        <li><strong>Blacklisting:</strong> We maintain relationships with ISPs and blacklist services to report confirmed spammers</li>
+                    </ul>
+                </div>
+                <div class="japanese">
+                    <p>スパムに関する苦情はすべて真剣に取り扱います：</p>
+                    <ul>
+                        <li><strong>報告:</strong> スパムの疑いがある場合は abuse@countrymaxemail.com に報告できます</li>
+                        <li><strong>調査:</strong> すべての報告は48営業時間以内に調査されます</li>
+                        <li><strong>措置:</strong> 違反が確認されたアカウントは直ちに停止されます</li>
+                        <li><strong>ブラックリスト登録:</strong> 確認されたスパマーを報告するため、ISPやブラックリストサービスとの関係を維持しています</li>
+                    </ul>
+                </div>
+            </div>
             
             <h2>7. Consequences of Violation</h2>
-            <p>Violations of this policy will result in:</p>
-            <ul>
-                <li><strong>Immediate Suspension:</strong> Accounts will be suspended without refund</li>
-                <li><strong>Termination:</strong> Serious violations will result in permanent account termination</li>
-                <li><strong>Fines:</strong> We reserve the right to impose fines of up to $500 per violation</li>
-                <li><strong>Legal Action:</strong> Serious violations may be reported to appropriate authorities</li>
-                <li><strong>Blacklisting:</strong> Violators may be added to industry blacklists</li>
-            </ul>
+            <div class="bilingual-section">
+                <div class="english">
+                    <p>Violations of this policy will result in:</p>
+                    <ul>
+                        <li><strong>Immediate Suspension:</strong> Accounts will be suspended without refund</li>
+                        <li><strong>Termination:</strong> Serious violations will result in permanent account termination</li>
+                        <li><strong>Fines:</strong> We reserve the right to impose fines of up to $500 per violation</li>
+                        <li><strong>Legal Action:</strong> Serious violations may be reported to appropriate authorities</li>
+                        <li><strong>Blacklisting:</strong> Violators may be added to industry blacklists</li>
+                    </ul>
+                </div>
+                <div class="japanese">
+                    <p>本ポリシーに違反した場合、以下の結果が生じます：</p>
+                    <ul>
+                        <li><strong>即時停止:</strong> アカウントは返金なしで停止されます</li>
+                        <li><strong>解約:</strong> 重大な違反はアカウントの永久停止につながります</li>
+                        <li><strong>罰金:</strong> 違反1件につき最大500ドルの罰金を課す権利を留保します</li>
+                        <li><strong>法的措置:</strong> 重大な違反は適切な当局に報告される可能性があります</li>
+                        <li><strong>ブラックリスト登録:</strong> 違反者は業界のブラックリストに追加される可能性があります</li>
+                    </ul>
+                </div>
+            </div>
             
             <h2>8. Best Practices</h2>
-            <p>To maintain good sending reputation:</p>
-            <ul>
-                <li>Use confirmed opt-in (double opt-in) for all lists</li>
-                <li>Regularly clean your email lists (remove inactive addresses)</li>
-                <li>Segment your lists for targeted, relevant content</li>
-                <li>Monitor your engagement metrics (open rates, click rates)</li>
-                <li>Provide valuable content that recipients expect</li>
-                <li>Honor unsubscribe requests promptly</li>
-            </ul>
+            <div class="bilingual-section">
+                <div class="english">
+                    <p>To maintain good sending reputation:</p>
+                    <ul>
+                        <li>Use confirmed opt-in (double opt-in) for all lists</li>
+                        <li>Regularly clean your email lists (remove inactive addresses)</li>
+                        <li>Segment your lists for targeted, relevant content</li>
+                        <li>Monitor your engagement metrics (open rates, click rates)</li>
+                        <li>Provide valuable content that recipients expect</li>
+                        <li>Honor unsubscribe requests promptly</li>
+                    </ul>
+                </div>
+                <div class="japanese">
+                    <p>良好な送信評価を維持するためには：</p>
+                    <ul>
+                        <li>すべてのリストで確認済みオプトイン（ダブルオプトイン）を使用する</li>
+                        <li>電子メールリストを定期的にクリーンアップする（非アクティブなアドレスを削除）</li>
+                        <li>ターゲットを絞った関連コンテンツのためにリストをセグメント化する</li>
+                        <li>エンゲージメント指標（開封率、クリック率）を監視する</li>
+                        <li>受信者が期待する価値のあるコンテンツを提供する</li>
+                        <li>配信停止要求を迅速に処理する</li>
+                    </ul>
+                </div>
+            </div>
             
             <div class="last-updated">
                 <p>Effective Date: June 4, 2025</p>
