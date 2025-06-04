@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - CountryMax Email Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .logo i {
+            color: var(--accent);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+        
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Policy Container */
+        .policy-container {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+        
+        .policy-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .policy-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+        
+        .policy-header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+        
+        .policy-content {
+            line-height: 1.8;
+        }
+        
+        .policy-content h2 {
+            color: #2c3e50;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .policy-content h3 {
+            color: #3498db;
+            margin: 1.5rem 0 0.8rem;
+        }
+        
+        .policy-content p {
+            margin-bottom: 1rem;
+            color: #34495e;
+        }
+        
+        .policy-content ul {
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .policy-content li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .last-updated {
+            text-align: right;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        .back-to-home {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-to-home i {
+            margin-right: 8px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .policy-container {
+                padding: 1.5rem;
+                margin: 2rem auto;
+            }
+            
+            .policy-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-paper-plane"></i>
+                <span>CountryMax Email Delivery</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="anti-spam.html">Anti-Spam Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Terms of Service -->
+    <div class="policy-container">
+        <div class="policy-header">
+            <h1>Terms of Service</h1>
+            <p>Last Updated: June 4, 2025</p>
+        </div>
+        <div class="policy-content">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using CountryMax Email Delivery ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of the terms, you may not access the Service.</p>
+            
+            <h2>2. Service Description</h2>
+            <p>CountryMax Email Delivery provides email delivery services using Amazon Simple Email Service (SES). We act as an intermediary between you and Amazon SES to facilitate email sending.</p>
+            
+            <h2>3. Account Registration</h2>
+            <p>To use our Service, you must register for an account and provide accurate information. You are responsible for maintaining the security of your account credentials.</p>
+            
+            <h2>4. Acceptable Use</h2>
+            <p>You agree not to use the Service for any unlawful purpose or in violation of these Terms. Prohibited activities include:</p>
+            <ul>
+                <li>Sending unsolicited commercial email (spam)</li>
+                <li>Sending emails with deceptive subject lines or content</li>
+                <li>Harvesting email addresses without consent</li>
+                <li>Sending emails containing malware or viruses</li>
+                <li>Violating CAN-SPAM Act, GDPR, or other applicable laws</li>
+            </ul>
+            
+            <h2>5. Email Content Requirements</h2>
+            <p>All emails sent through our Service must:</p>
+            <ul>
+                <li>Contain a valid physical mailing address</li>
+                <li>Include a clear and conspicuous unsubscribe mechanism</li>
+                <li>Accurately identify the sender</li>
+                <li>Not contain false or misleading information</li>
+            </ul>
+            
+            <h2>6. Compliance with Laws</h2>
+            <p>You agree to comply with all applicable laws and regulations, including but not limited to:</p>
+            <ul>
+                <li>The CAN-SPAM Act (Controlling the Assault of Non-Solicited Pornography And Marketing Act)</li>
+                <li>General Data Protection Regulation (GDPR)</li>
+                <li>Canada's Anti-Spam Legislation (CASL)</li>
+                <li>California Consumer Privacy Act (CCPA)</li>
+            </ul>
+            
+            <h2>7. Account Suspension and Termination</h2>
+            <p>We may suspend or terminate your account at any time if we determine that:</p>
+            <ul>
+                <li>You have violated these Terms or applicable laws</li>
+                <li>Your complaint rate exceeds 0.1%</li>
+                <li>Your bounce rate exceeds 5%</li>
+                <li>You engage in activities that threaten the deliverability of our service</li>
+            </ul>
+            
+            <h2>8. Intellectual Property</h2>
+            <p>You retain all rights to your content. By using our Service, you grant us a limited license to transmit your content through Amazon SES.</p>
+            
+            <h2>9. Limitation of Liability</h2>
+            <p>CountryMax Email Delivery shall not be liable for any indirect, incidental, special, consequential or punitive damages resulting from your use of the Service.</p>
+            
+            <h2>10. Amendments</h2>
+            <p>We reserve the right to modify these Terms at any time. Continued use of the Service after changes constitutes acceptance of the modified Terms.</p>
+            
+            <div class="last-updated">
+                <p>Effective Date: June 4, 2025</p>
+            </div>
+            
+            <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CountryMax Email</h3>
+                    <p>Professional email delivery service powered by Amazon SES infrastructure.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="anti-spam.html">Anti-Spam Policy</a></li>
+                        <li><a href="#">Acceptable Use Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> koltwnvtya@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (516) 786-6647</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Corvallis, OR, NY, USA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CountryMax Email Delivery Service. All rights reserved. A professional email solution powered by Amazon SES.</p>
+                <p>GitHub Pages URL: https://countrymaxemaildelivery1.github.io</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
